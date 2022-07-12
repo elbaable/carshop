@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//get homepage
+Route::get('/', 'HomeController@index');
+//get option data
+Route::post('get-option', 'HomeController@get_option');

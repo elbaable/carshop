@@ -22,6 +22,7 @@ class CarFactory extends Factory
         return [
             'make' => $car['make'],
             'model' => $car['model'],
+            'seller' => collect(['Owner', 'Car Dealership'])->random(),
             'year' => random_int(2000,2022),
             'condition' => collect(['used', 'new'])->random(),
             'price' => random_int(5000,45000)*100,

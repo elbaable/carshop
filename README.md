@@ -1,10 +1,18 @@
 ## CarShop Laravel Technical Challenge
 
-Clone this repo, and complete the following:
-
-* Add a column to the cars model called "seller" the options for this will be "Owner", "Car Dealership".
-* Update the seeder to populate this column, and seed your database with a few hundred entries.
-* Modify the welcome.blade.php view to do the following:
-    - List the cars in a paginated table
-    - Add two select boxes, one that lets you select which column to order by, one that lets you filter by car type
-    - The page should autoreload when a new selection is made on one of the select boxes
+# Guide Step
+Step 1.
+    Clone this repo to any of your directory.
+Step 2.
+    Run composer update in your vs code or on cmd after you change directory to your project directory.
+Step 3.
+    Run cp .env.example .env to generate .env file
+Step 4.
+    Run php artisan migrate
+Step 5
+    Run php artisan db:seed --force
+Step 6
+    Run php artisan serve
+Final
+    You can go to https://localhost:8000/ to check the page.
+    Enjoy :)

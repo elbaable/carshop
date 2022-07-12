@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('make');
             $table->string('model');
+            $table->string('seller');
             $table->string('year');
             $table->string('condition');
             $table->integer('price');
